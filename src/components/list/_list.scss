@@ -1,0 +1,14 @@
+.card__list {
+  box-shadow: none;
+  padding: 10px 0;
+
+  .card-item {
+    border-top: $border;
+    padding: 0 20px;
+  
+ 
+    ul {
+      margin-left: 50px;
+    }
+  }
+}

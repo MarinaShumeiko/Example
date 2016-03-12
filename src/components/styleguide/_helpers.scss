@@ -1,0 +1,152 @@
+.anim-class {
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+.is-collapsed {
+  display: none;
+}
+
+.collapsing {
+  transition: height .35s ease;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+// Align  - Vertical alignment utilities
+// Depends on an appropriate `display` value.
+// ------------------------------------------------
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+
+// Display
+// ------------------------------------------------
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block !important;
+  max-width: 100%; // Fix for Firefox bug: an image styled `max-width:100%` within an inline-block will display at its default size, and not limit its width to 100% of an ancestral container.
+}
+
+.table, {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.flex {
+  display: flex;
+}
+
+
+// Layout
+// ------------------------------------------------
+.clear {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.float-left,
+.pull-left {
+  float: left;
+}
+
+.float-right,
+.pull-right {
+  float: right;
+}
+
+
+// States
+// ------------------------------------------------
+.is-hidden {
+  //display: none;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.is-shown {
+  display: block;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.is-invisible {
+  visibility: hidden;
+}
+
+.is-visible {
+  visibility: visible;
+}
+
+// Text
+// ------------------------------------------------
+
+.text-right {
+  text-align: right;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--muted {
+  color: $color-text-bright;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+
+// Title
+//----------------------------------------------------
+
+.title {
+  @include falcon-bold;
+  font-size: 16px;
+  margin: $xsmall-spacing-unit 0 0;
+}
+
+//Colors
+//----------------------------------------------------
+
+.grey {
+  color: $color-grey-light;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+

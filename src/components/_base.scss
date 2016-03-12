@@ -1,0 +1,122 @@
+//Import components styles
+@import "src/components/styleguide/_all.scss";
+@import 'src/components/button/_button.scss';
+@import 'src/components/card/_card.scss';
+@import 'src/components/list/_list.scss';
+@import 'src/components/autosuggest/_autosuggest.scss';
+@import 'src/components/button/_button.scss';
+
+
+body {
+  @include falcon-regular;
+  background-color: $color-white;
+  color: $color-text;
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgb(240,240,240);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+  text-align: center;
+   img {
+    display: inline-block;
+   }
+}
+.input-field {
+  overflow: hidden;
+  padding: 0 10px;
+  box-shadow: inset 1px 1px 2px $color-input-shadow;
+  border: $border;
+  border-radius: $radius-form-input;
+  background-color: $color-white;
+
+  input {
+    @include falcon-italics;
+    height: 33px;
+    width: 100%;
+    display: block;
+    background-color: $color-white;
+    color: $color-grey-light;
+    padding: 0;
+    border: none;
+    outline: 0;
+  }
+}
+
+.hasFocus {
+  border: 1px solid $color-blue;
+}
+
+.container {
+    max-width: 592px;
+    margin: 0 auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+.card-page,
+.engage-page {
+  max-width: 592px;
+  margin: 0 auto;
+  padding: $base-spacing-unit 0;
+  border-radius: 5px;
+  background-color: $color-white;
+}
+
+.engage-page {
+  padding: $base-spacing-unit;
+  margin-bottom: 20px;
+
+  .user-info {
+    margin-left: 33%;
+  }
+}
+
+// Title
+//----------------------------------------------------
+
+.title {
+  @include falcon-bold;
+  font-size: 16px;
+  margin: $xsmall-spacing-unit 0 0;
+}
+
+.main-title {
+ @include falcon-bold;
+ font-size: 32px;
+ margin-bottom: $base-spacing-unit;
+}
+
+//comments block
+//--------------------------------------------------
+.comments {
+  padding: 0 20px;
+
+  span {
+    color: $color-grey-light;
+  }
+
+  .amount {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: $border;
+  }
+
+  .update-time {
+    display: block;
+    margin-top: 5px;
+  }
+}

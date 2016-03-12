@@ -1,0 +1,39 @@
+.btn {
+	@include falcon-bold;
+	display: inline-block;
+	padding: $xsmall-spacing-unit $small-spacing-unit; 
+	border-radius: $radius-button;
+	text-align: center;
+	font-size: 11px;
+	background-color: $color-white;
+	text-transform: uppercase;
+	border: none;
+
+}
+
+.btn-default {
+    color: $color-black-light;
+    border: $color-grey-light;
+    border: 1px solid $color-grey-light;
+
+    &:hover {
+    	border: 1px solid $color-blue;
+    }
+}
+
+.btn-primary {
+    color: $color-white;
+    background-color: $color-blue;
+    border: 1px solid $color-blue;
+
+    &:hover {
+    	background-color: $color-blue-dark;
+    	border: 1px solid $color-blue-dark;
+    }
+}
+
+.btn-icon {
+	i {
+		padding-right: $small-spacing-unit;
+	}
+}

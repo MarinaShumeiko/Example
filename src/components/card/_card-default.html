@@ -1,0 +1,32 @@
+<div class="card__default clear" ng-controller="EngageCtrl">
+  <div class="user-image float-left">
+    <a href="">
+      <img src="{{comment.sender.avatar}}" alt="user image">
+    </a>
+  </div>
+
+  <div class="user-info">
+    <div class="right-block">12:00 <span>am</span></div>
+    <h3 class="user-name title">{{comment.sender.name}}</h3>
+    <p>{{comment.message}}</p>
+    <div class="card-bottom clear">
+      <div class="float-left">
+        <span class="twitter"> <i class="fa fa-twitter"></i> Carlsberg</span>
+        <span class="date"><i class="fa fa-calendar-o"></i>15th Oct 2014</span>
+      </div>
+      <div class="float-right">
+        <button type="button" class="btn btn-default ">like</button>
+        <button type="button" class="btn btn-primary btn-icon"><i class="fa fa-reply"></i>reply</button>
+      </div>
+    </div>
+    <div ng-controller="AutosuggestCtrl">
+      <form action="#" class="card-form" ng-if="comment.read">
+      <div ng-include="'components/autosuggest/_autosuggest-input.html'"></div>
+    </form>
+    </div>
+    
+  </div>
+</div>
+<ul ng-repeat="reply in comment.replies">
+	<li class="card-item" ng-include="'components/card/_card-mini.html'"></li>
+</ul>

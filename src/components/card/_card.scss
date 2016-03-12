@@ -1,0 +1,103 @@
+.card {
+  padding:0 0 $base-spacing-unit;
+  background-color: $color-white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  p {
+    margin-top: $xsmall-spacing-unit;;
+    margin-bottom: $small-spacing-unit;
+  }
+
+  .card__default {
+    padding: $base-spacing-unit 0;
+
+    .user-image {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+      }
+    }
+
+    .user-info {
+      margin-left: $xxlarge-spacing-unit;
+      position: relative;
+      padding-left: $base-spacing-unit;
+
+      .right-block {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $color-grey-light;
+      }
+
+      p { 
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%; 
+        white-space: nowrap; 
+      }
+
+      .card-bottom {
+        padding-top: $small-spacing-unit;
+        padding-bottom: $base-spacing-unit;
+
+        .twitter {
+          color: $color-grey-light;
+          margin-right: $small-spacing-unit;
+          cursor: pointer;
+
+          i {
+            margin-right: $xsmall-spacing-unit;
+            padding: 3px 3px 1px 3px;
+            color: $color-white;
+            background-color: $color-blue;
+            border-radius: $radius-main;
+            font-size: 16px;
+          }
+        }
+
+        .date {
+          color: $color-grey-light;
+
+          i {
+            margin-right: $xsmall-spacing-unit;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .card__mini {
+    padding-bottom: 10px;
+    
+    .user-image-mini {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .user-info-mini {
+      margin-left: 30px;
+
+      .title {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.card-example {
+  .card-page {
+    .card__default {
+      padding: 0 20px;
+    }
+
+    .card__mini {
+      padding-top: 20px;
+      border-top: $border;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="autosuggest__block">
+  <div class="input-field">
+    <input class="autosuggest"  placeholder="Type here.." ng-focus="inputHasFocus = true" ng-blur="inputHasFocus = false">
+  </div>
+    
+  <ul class="dropdown" ng-show="inputHasFocus">
+      <li class="" ng-repeat="suggestion in suggestions">{{ suggestion }}</li>
+  </ul>
+</div>

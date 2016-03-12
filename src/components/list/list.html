@@ -1,0 +1,21 @@
+<div ng-controller="EngageCtrl" class="container">
+
+    <div ng-include="'components/navbar/navbar.html'"></div>
+
+    <h1 class="main-title">List docs</h1>
+
+    <h2>Box list for in a card</h2>
+</div>	
+<div class="card-page" ng-controller="EngageCtrl">
+  <div class="comments clear">
+    <h2 class="title float-left">Comments</h2>
+    <span class="amount float-left">22</span>
+    <div class="float-right">
+      <span class="update-time">Updated 5 minutes ago</span>
+    </div>
+  </div>
+  <ul class="card card__list" ng-repeat="comment in thread.comments">
+      <li class="card-item" ng-include="'components/card/_card-default.html'"></li>
+  </ul>
+</div>
+

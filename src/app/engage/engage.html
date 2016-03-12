@@ -1,0 +1,37 @@
+<div class="container">
+  <div ng-include="'components/navbar/navbar.html'"></div>
+  <h1>Engage app</h1>
+</div>
+  <div class="engage-page">
+    <div class="card__default clear" ng-controller="EngageCtrl">
+      <div class="user-image float-left">
+        <a href="#">
+          <img src="{{thread.sender.avatar}}" alt="user image">
+        </a>
+      </div>
+
+      <div class="user-info">
+        <div class="grey">{{thread.network}}</div>
+        <h3 class="user-name title">{{thread.sender.name}}</h3>
+        <p>{{thread.message}}</p>
+        
+        <div class="blue">
+          {{thread.channel}}
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="card-page" ng-controller="EngageCtrl">
+    <div class="comments clear">
+      <h2 class="title float-left">Comments</h2>
+      <span class="amount float-left">22</span>
+      <div class="float-right">
+        <span class="update-time">Updated 5 minutes ago</span>
+      </div>
+    </div>
+    <ul class="card card__list" ng-repeat="comment in thread.comments">
+        <li class="card-item" ng-include="'components/card/_card-default.html'"></li>
+    </ul>
+  </div>
+

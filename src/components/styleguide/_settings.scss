@@ -1,0 +1,66 @@
+// Grid
+// --------------------------------------------------------------------------------
+$column: 60px;
+$gutter: 20px;
+$grid-columns: 12;
+$max-width: 1040px;
+$grid-padding: 10px;  // grid-padding equal to half the gutters
+
+// Colors
+// --------------------------------------------------------------------------------
+
+
+//Grey scale
+$color-white: #fff;
+$color-grey: #777;
+$color-grey-light: #999;
+$color-black: #000;
+$color-black-light: #333;
+$color-blue: #009dff;
+$color-blue-dark: #0281d1;
+
+
+// Text
+$color-text: $color-black-light;
+$color-text-bright: $color-grey-light;
+$color-text-white: $color-white;
+$color-input-shadow: #f0f3f5;
+
+// Borders
+// --------------------------------------------------------------------------------
+$border: 1px solid #e6e6e6;
+
+// form
+$border-form-input: 1px solid $color-grey-light;
+$border-form-input-hover: 1px solid $color-grey;
+$border-form-input-focus: 1px solid $color-blue;
+
+// ----------------------------------------------------------------
+// corner radiuses
+$radius-main: 5px;
+$radius-form-input: 2px;
+$radius-button: 3px;
+
+// Sizes
+// --------------------------------------------------------------------------------
+
+// Baseline and form elements
+$base-font-size: 14px;
+$base-button-size: 40px;
+
+// Spacing-unit
+$xsmall-spacing-unit: 5px;
+$small-spacing-unit: 10px;
+$base-spacing-unit: 20px;
+$large-spacing-unit: 30px;
+$xlarge-spacing-unit: 40px;
+$xxlarge-spacing-unit: 50px;
+
+// Breakpoints
+$bp-xsmall: 400px;
+$bp-small: 600px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xl: 1280px;
+$bp-xxl: 1400px;
+$bp-xxxl: 1600px;

@@ -1,0 +1,50 @@
+<div class="container">
+  <div ng-include="'components/navbar/navbar.html'"></div>
+</div>
+<div class="card-example">
+  <ul class="card card-page" ng-controller="EngageCtrl">
+    <li class="card__default clear" ng-controller="EngageCtrl">
+      <div class="user-image float-left">
+        <a href="#">
+          <img src="{{thread.sender.avatar}}" alt="user image">
+        </a>
+      </div>
+
+      <div class="user-info">
+        <div class="right-block">12:00 <span>am</span></div>
+        <h3 class="user-name title">{{thread.sender.name}}</h3>
+        <p>{{thread.message}}</p>
+        <div class="card-bottom clear">
+          <div class="float-left">
+            <span class="twitter"> <i class="fa fa-twitter"></i> Carlsberg</span>
+            <span class="date"><i class="fa fa-calendar-o"></i>15th Oct 2014</span>
+          </div>
+          <div class="float-right">
+            <button type="button" class="btn btn-default ">like</button>
+            <button type="button" class="btn btn-primary btn-icon"><i class="fa fa-reply"></i>reply</button>
+          </div>
+        </div>
+        <div ng-controller="AutosuggestCtrl">
+          <form action="#" class="card-form" ng-if="comment.read">
+          <div ng-include="'components/autosuggest/_autosuggest-input.html'"></div>
+        </form>
+      </div>
+    </li>
+    <li class="card__default card__mini clear">
+      <div class="user-image user-image-mini float-left">
+        <a href="#">
+          <img src="{{thread.sender.avatar}}" alt="user image">
+        </a>
+      </div>
+
+       <div class="user-info user-info-mini">
+        <div class="right-block">12:00 <span>am</span></div>
+        <h3 class="user-name title">{{thread.sender.name}}</h3>
+        <p>{{thread.message}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
