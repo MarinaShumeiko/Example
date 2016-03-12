@@ -24,7 +24,8 @@
       position: relative;
       padding-left: $base-spacing-unit;
 
-      .right-block {
+      .right-block,
+      .time {
         position: absolute;
         top: 0;
         right: 0;
